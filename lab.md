@@ -56,7 +56,7 @@ code used for this portion of the lab is provided below.
 <br/>
 
 <div align="center">
-<img src="https://github.com/user-attachments/assets/4b2b7af1-3077-47c3-a787-bc5a2a2dca0c" alt="Code 2" width="600">
+<img src="https://github.com/user-attachments/assets/a84f7e80-fdf7-4242-8f83-abc04ae52cbf" alt="Code 2" width="600">
 <br/>
 <figcaption style="font-size: 16px; text-align: center;"> Figure 4: Rest of the ChatGPT generated code for part 3 of the lab. </figcaption>
 </div> 
