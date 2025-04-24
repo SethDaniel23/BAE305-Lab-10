@@ -20,7 +20,7 @@ Throughout the lab, we worked with two datasets: one containing metadata on wate
 code used for this portion of the lab is provided below.
 
 <div align="center">
-<img src="https://github.com/user-attachments/assets/a951d11c-36bc-40f4-83bc-1ed597356e51" alt="1" width="400">
+<img src="!https://github.com/user-attachments/assets/f5d134a1-717f-4653-8f16-a870d522c0fc" alt="1" width="400">
 <br/>
 <figcaption style="font-size: 16px; text-align: center;"> Figure 1: ChatGPT Python pandas database code for Part 1 of the lab. </figcaption>
 </div> 
