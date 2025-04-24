@@ -6,7 +6,7 @@
 ## Introduction
    This lab aimed to develop software tools using Python and a large language model (LLM) to analyze water quality data. By leveraging libraries like pandas and Streamlit, we created user-friendly functions to filter, clean, and visualize data from real-world environmental datasets provided by the USGS. This hands-on exercise demonstrated how AI-assisted programming can streamline data processing and enhance accessibility to complex information through intuitive web apps.
 
-Throughout the lab, we worked with two datasets: one containing metadata on water quality monitoring stations and another with detailed water quality test results. Using Python and AI-generated code, we built functions to extract site information, plot time-series contaminant trends, and develop an interactive Streamlit app. This lab reinforced concepts in data science and environmental engineering and introduced tools and techniques used in real-world data analysis and app development.
+Throughout the lab, we worked with two datasets: one containing metadata on water quality monitoring stations and another with detailed water quality test results. Using Python and AI-generated code, we built functions to extract site information, plot time-series contaminant trends, and develop an interactive Streamlit app. This lab reinforced data science and environmental engineering concepts and introduced tools and techniques used in real-world data analysis and app development.
 
 ## Materials
 1. A computer running Arduino IDE
@@ -35,7 +35,7 @@ code used for this portion of the lab is provided below.
 <br/>
 
 <div align="center">
-<img src="https://github.com/user-attachments/assets/ccf9e31b-6949-4d61-af62-b78bc3f30410" alt="Code 1" width="400">
+<img src="" alt="Code 1" width="400">
 <br/>
 <figcaption style="font-size: 16px; text-align: center;"> Figure 2: ChatGPT generated code for Part 2 of the lab (1/2). </figcaption>
 </div> 
@@ -126,34 +126,44 @@ https://redesigned-potato-g4r6prvjwqrv3pprw-8501.app.github.dev/
 
 **AI Assistance For Part 1**
 
-| Goal   | Provide AI with directions for Part 1 of Lab |
-|--------|----------------------------------------------|
-| Model  | ChatGPT GPT-4-turbo                          |
-| Prompt | In this section, you will use the pandas Python library to access a.csv file downloaded from USGS. 1. Understand the station database downloaded from USGS. a. Download the file named station.csv from the Canvas assignment. b. Open the file using Excel or Google Sheets to examine its contents. c. Take note of the headers and the types of information available in the database. d. If you are using a cloud service, you must upload the files to the cloud environment. 2. Use your preferred LLM AI to generate a Python function that accesses the database, filters for the names of water quality measurement sites, and displays the location information for all sites without repetition. 3. Use your preferred LLM AI to create a map that pinpoints the location of every station in the database |
+| Goal   | Give AI directions for accessing data for part 1 of the lab |
+|--------|-------------------------------------------------------------|
+| Model  | ChatGPT GPT-4-turbo                                         |
+| Prompt | generate a Python function that accesses the database, filters
+for the names of water quality measurement sites, and displays the location information for
+all sites without repetition |
+
+
+| Goal   | Give AI directions for making the map for part 1 of the lab |
+|--------|-------------------------------------------------------------|
+| Model  | ChatGPT GPT-4-turbo                                         |
+| Prompt | create a map that pinpoints the location of every station in the
+database |
+
 
 **AI Assistance For Part 2**
 
-| Goal   | Provide AI with directions for Part 2 of the Lab |
-|--------|--------------------------------------------------|
-| Model  | ChatGPT GPT-4-Turbo                              |
-| Prompt | In this section, you will access a different database containing information on the results of various water quality tests. The goal is to work with a large dataset and extract specific, relevant information. 1. Understand the results database downloaded from USGS. a. Download the file named narrowresult.csv from the Canvas assignment. b. Open the file using Excel or Google Sheets to examine its contents. c. Take note of the headers and the types of information available in the database. d. If you are using a cloud service, upload the file to your cloud environment. 2. Use your preferred LLM AI to generate a Python function that accesses the database, filters for a desired water quality characteristic, and plots the results. Each site should be represented as a separate line with a different color, where the Y-axis represents the measured values and the X-axis represents time. 3. Ask the LLM AI to modify the code such that you can ask for two characteristics at the same time. |
+| Goal   | Tell AI to access data file for part 2 |
+|--------|----------------------------------------|
+| Model  | ChatGPT GPT-4-Turbo                    |
+| Prompt | generate a Python function that accesses the narrowresults.csv database, filters 
+for a desired water quality characteristic, and plots the results. Each site should be
+represented as a separate line with a different color, where the Y-axis represents the
+measured values and the X-axis represents time. |
 
-| Goal   | Allow ChatGPT to analysze the structure of the narrowresults file. |
+| Goal   | Get ChatGPT to allow two characteristics at once |
 |--------|--------------------------------------------------------------------|
 | Model  | ChatGPT GPT-4-Turbo                                                |
-| Prompt | Provided narrowresults.csv file                                    |
-
-| Goal   | Assit ChatGPT with reading the structure of the narrowresults file. |
-|--------|---------------------------------------------------------------------|
-| Model  | ChatGPT GPT-4-Turbo                                                 |
-| Prompt | OrganizationIdentifier	OrganizationFormalName	ActivityIdentifier	ActivityStartDate	ActivityStartTime/Time	ActivityStartTime/TimeZoneCode	MonitoringLocationIdentifier	ResultIdentifier	DataLoggerLine	ResultDetectionConditionText	MethodSpecificationName	CharacteristicName	ResultSampleFractionText	ResultMeasureValue	ResultMeasure/MeasureUnitCode	MeasureQualifierCode	ResultStatusIdentifier	StatisticalBaseCode	ResultValueTypeName	ResultWeightBasisText	ResultTimeBasisText	ResultTemperatureBasisText	ResultParticleSizeBasisText	PrecisionValue	DataQuality/BiasValue	ConfidenceIntervalValue	UpperConfidenceLimitValue	LowerConfidenceLimitValue	ResultCommentText	USGSPCode	ResultDepthHeightMeasure/MeasureValue	ResultDepthHeightMeasure/MeasureUnitCode	ResultDepthAltitudeReferencePointText	ResultSamplingPointName	BiologicalIntentName	BiologicalIndividualIdentifier	SubjectTaxonomicName	UnidentifiedSpeciesIdentifier	SampleTissueAnatomyName	GroupSummaryCountWeight/MeasureValue	GroupSummaryCountWeight/MeasureUnitCode	CellFormName	CellShapeName	HabitName	VoltismName	TaxonomicPollutionTolerance	TaxonomicPollutionToleranceScaleText	TrophicLevelName	FunctionalFeedingGroupName	TaxonomicDetailsCitation/ResourceTitleName	TaxonomicDetailsCitation/ResourceCreatorName	TaxonomicDetailsCitation/ResourceSubjectText	TaxonomicDetailsCitation/ResourcePublisherName	TaxonomicDetailsCitation/ResourceDate	TaxonomicDetailsCitation/ResourceIdentifier	FrequencyClassInformationUrl	ResultAnalyticalMethod/MethodIdentifier	ResultAnalyticalMethod/MethodIdentifierContext	ResultAnalyticalMethod/MethodName	ResultAnalyticalMethod/MethodUrl	ResultAnalyticalMethod/MethodQualifierTypeName	MethodDescriptionText	LaboratoryName	AnalysisStartDate	AnalysisStartTime/Time	AnalysisStartTime/TimeZoneCode	AnalysisEndDate	AnalysisEndTime/Time	AnalysisEndTime/TimeZoneCode	ResultLaboratoryCommentCode	ResultLaboratoryCommentText	ResultDetectionQuantitationLimitUrl	LaboratoryAccreditationIndicator	LaboratoryAccreditationAuthorityName	TaxonomistAccreditationIndicator	TaxonomistAccreditationAuthorityName	LabSamplePreparationUrl	ProviderName |
+| Prompt | modify the code such that you can ask for two characteristics at the same
+time. |
 
 **AI Assistance for Part 3**
 
-| Goal   | Allow ChatGPT to analysze the structure of the narrowresults file. |
+| Goal   | Ask AI to combine the code from Part 1 and Part 2 |
 |--------|--------------------------------------------------------------------|
 | Model  | ChatGPT GPT-4-Turbo                                                |
-| Prompt | Now, lets combine that with our other function from earlier and follow the lab steps: 3. Edit your app to add the functionalities required. a. Click the edit button (pencil icon) and wait for the GitHub Codespaces environment to be created. b. Ask your preferred LLM AI to help you generate the app for streamlit and copy and paste the result under the streamlit_app.py file. You will be able to run the app as soon as it is saved |
+| Prompt | develop a Streamlit app that allows the user to upload both databases used in Part 1 and 2, to search for a contaminant in the databases. Once a contaminant has been selected you should be able to define the range of values and dates that you want to show. After modifying the ranges, update the map showing the location of the stations with the contaminant within that range and measured during the time frame. It should
+also show you a trend over time of the contaminant in all the stations shown. |
 
 | Goal   | Debug code for streamlit application |
 |--------|--------------------------------------|
