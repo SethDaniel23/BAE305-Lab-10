@@ -20,7 +20,7 @@ Throughout the lab, we worked with two datasets: one containing metadata on wate
 code used for this portion of the lab is provided below.
 
 <div align="center">
-<img src="https://github.com/user-attachments/assets/f5d134a1-717f-4653-8f16-a870d522c0fc" alt="1" width="400">
+<img src="https://github.com/user-attachments/assets/f5d134a1-717f-4653-8f16-a870d522c0fc" alt="1" width="600">
 <br/>
 <figcaption style="font-size: 16px; text-align: center;"> Figure 1: ChatGPT Python pandas database code for Part 1 of the lab. </figcaption>
 </div> 
@@ -35,22 +35,14 @@ code used for this portion of the lab is provided below.
 <br/>
 
 <div align="center">
-<img src="" alt="Code 1" width="400">
+<img src="https://github.com/user-attachments/assets/0a842836-0a8f-4369-a520-160d9e89d9b5" alt="2" width="600">
 <br/>
-<figcaption style="font-size: 16px; text-align: center;"> Figure 2: ChatGPT generated code for Part 2 of the lab (1/2). </figcaption>
+<figcaption style="font-size: 16px; text-align: center;"> Figure 2: ChatGPT generated code for narrowresults data from part 2. </figcaption>
 </div> 
 
 <br/>
 
-<div align="center">
-<img src="https://github.com/user-attachments/assets/0c5dfe5c-7dda-4a2c-9261-48c6df6a257c" alt="Code 2" width="400">
-<br/>
-<figcaption style="font-size: 16px; text-align: center;"> Figure 3: ChatGPT generated code for part 2 of the lab (2/2). </figcaption>
-</div> 
-
-<br/>
-
-**Part 3: Streamlit App**
+**Part 3:**
 
   In the final section, a GitHub repository was created to host the Streamlit app. A new file named streamlit_app.py was initialized in the main branch. Within the Streamlit portal, the app was deployed by linking to the GitHub repo. Using the LLM, Python code was generated to build an interactive app allowing users to upload both CSV files, select a contaminant, and specify value and date ranges. 
   The app dynamically updated a map showing station locations with matching data and a time-series plot summarizing the contaminant’s trends. After the app was functional, a requirements.txt file was created listing libraries like pandas, streamlit, and matplotlib, ensuring the app could install all dependencies during deployment.
@@ -69,31 +61,23 @@ code used for this portion of the lab is provided below.
 <figcaption style="font-size: 16px; text-align: center;"> Figure 5: ChatGPT generated code for part 3 of the lab (2/3). </figcaption>
 </div> 
 
-<br/>
-
-<div align="center">
-<img src="https://github.com/user-attachments/assets/5244ac84-6095-4653-bc82-f134a0ba8d24" alt="Code 2" width="400">
-<br/>
-<figcaption style="font-size: 16px; text-align: center;"> Figure 6: ChatGPT generated code for part 4 of the lab (3/3). </figcaption>
-</div> 
-
-<br/>
 
 ## Test Equipment
 
-1. Computer with Arduino IDE
+1. Computer
+2. Python IDE
    
 ## Test Procedures
 
-**Part 1: Map It**
+**Part 1:**
    
    Testing for this section began by confirming that station.csv was readable and correctly parsed. The filtering function was run to ensure all monitoring sites were uniquely listed and that no locations were duplicated. The map output was inspected to check that every station appeared in a valid location with appropriate spacing and no missing coordinates. If errors such as NaNs or repeated names appeared, the script was adjusted and re-tested. Function outputs were validated against the raw CSV file opened in Excel or Google Sheets.
 
-**Part 2: What's Normal**
+**Part 2:**
 
    For narrowresult.csv, tests focused on verifying that the correct water quality characteristic was selected and plotted over time. The resulting graphs were checked to make sure each station had a distinct line and that timestamps aligned with the data values. When the code was updated to include two parameters, testing involved selecting various combinations of characteristics and verifying that both were plotted clearly, with legends and color distinctions. Edge cases—such as selecting a rare parameter or a station with sparse data—were also tested to ensure the plot didn’t break or show misleading results.
 
-**Part 3: Streamlit App**
+**Part 3:**
 
   Streamlit app testing involved using the web interface to upload the two CSV files and interact with the filtering options. The contaminant selector was tested with both common and rare inputs to confirm accurate data handling. Range sliders for value and date were adjusted to verify responsive updates in the map and trend graph. If selecting extreme or empty ranges produced no data, the app was checked for error-handling behavior. The app’s map was confirmed to update based on user input, and the plot was evaluated for clarity and responsiveness. Final tests ensured that the app loaded successfully via the deployed Streamlit URL and performed consistently across browsers. The app’s functionality was cross-verified with the original Python scripts to ensure data alignment.
 
@@ -103,15 +87,15 @@ code used for this portion of the lab is provided below.
 **Website/App Output**
 
 <div align="center">
-<img src="https://github.com/user-attachments/assets/1414df43-a8d3-408a-a577-af744bf1f62d" alt="Station Locations Map" width="400">
+<img src="" alt="web" width="600">
 <br/>
-<figcaption style="font-size: 16px; text-align: center;"> Figure 1: Station locations map generated by code. </figcaption>
+<figcaption style="font-size: 16px; text-align: center;"> Figure 1: Station locations map generated by streamlit app ChatGPT code. </figcaption>
 </div> 
 
 <br/>
 
 <div align="center">
-<img src="https://github.com/user-attachments/assets/b976aedb-f0a1-4ddd-82e8-6d537c91d31f" alt="Water Quality Plotting" width="400">
+<img src="" alt="Water Quality Plotting" width="400">
 <br/>
 <figcaption style="font-size: 16px; text-align: center;"> Figure 2: Water quality parameters on site generated by code. </figcaption>
 </div> 
@@ -119,10 +103,10 @@ code used for this portion of the lab is provided below.
 <br/>
 
 **Link to Code Repository**
-https://github.com/ashlippert/Lab-10-App-Code/blob/main/streamlit_app.py
+
 
 **Link to App**
-https://redesigned-potato-g4r6prvjwqrv3pprw-8501.app.github.dev/
+
 
 **AI Assistance For Part 1**
 
@@ -168,17 +152,17 @@ also show you a trend over time of the contaminant in all the stations shown. |
 | Goal   | Debug code for streamlit application |
 |--------|--------------------------------------|
 | Model  | ChatGPT GPT-4-Turbo                  |
-| Prompt | Read my code and help me fix this bug: @ashlippert ➜ /workspaces/Lab-10-App-Code (main) $ /usr/local/bin/python /workspaces/Lab-10-App-Code/streamlit_app.py Traceback (most recent call last): File "/workspaces/Lab-10-App-Code/streamlit_app.py", line 3, in <module> import matplotlib.pyplot as plt ModuleNotFoundError: No module named 'matplotlib' @ashlippert ➜ /workspaces/Lab-10-App-Code (main) $ |
+| Prompt | |
 
 | Goal   | Debug code for streamlit application |
 |--------|--------------------------------------|
 | Model  | ChatGPT GPT-4-Turbo                  |
-| Prompt | Help me fix: @ashlippert ➜ /workspaces/Lab-10-App-Code (main) $ /usr/local/bin/python /workspaces/Lab-10-App-Code/streamlit_app.py Traceback (most recent call last): File "/workspaces/Lab-10-App-Code/streamlit_app.py", line 4, in <module> import folium ModuleNotFoundError: No module named 'folium' |
+| Prompt |  |
 
 | Goal   | Debug code for streamlit application |
 |--------|--------------------------------------|
 | Model  | ChatGPT GPT-4-Turbo                  |
-| Prompt | The app loaded up, but when I attempted to plot I received this error: TypeError: 'value' must be an instance of str or bytes, not a float Traceback: File "/workspaces/Lab-10-App-Code/streamlit_app.py", line 75, in <module> plot_characteristics(char1, char2) File "/workspaces/Lab-10-App-Code/streamlit_app.py", line 61, in plot_characteristics plt.plot(site_data["ActivityStartDate"], site_data["ResultMeasureValue"], label=f"{site_id} - {char}") File "/home/vscode/.local/lib/python3.11/site-packages/matplotlib/pyplot.py", line 3827, in plot return gca().plot(^^^^^^^^^^^File "/home/vscode/.local/lib/python3.11/site-packages/matplotlib/axes/_axes.py", line 1777, in plot lines = [*self._get_lines(self, *args, data=data, **kwargs)]^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ File "/home/vscode/.local/lib/python3.11/site-packages/matplotlib/axes/_base.py", line 297, in __call__yield from self._plot_args(^^^^^^^^^^^^^^^^ File "/home/vscode/.local/lib/python3.11/site-packages/matplotlib/axes/_base.py", line 491, in _plot_args axes.yaxis.update_units(y) File "/home/vscode/.local/lib/python3.11/site-packages/matplotlib/axis.py", line 1754, in update_units default = self._converter.default_units(data, self)^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^File"/home/vscode/.local/lib/python3.11/site-packages/matplotlib/category.py", line 108, in default_units axis.units.update(data) File "/home/vscode/.local/lib/python3.11/site-packages/matplotlib/category.py", line 217, in update_api.check_isinstance((str, bytes), value=val) File "/home/vscode/.local/lib/python3.11/site-packages/matplotlib/_api/__init__.py", line 92, in check_isinstance raise TypeError( |
+| Prompt |  |
 
 ## Discussion:
 This lab demonstrated how AI-generated Python code can be applied to real-world environmental datasets for analysis and visualization. Using USGS water quality data, the lab explored the capabilities of tools like pandas and Streamlit to filter, map, and plot water quality trends by location and contaminant. While the AI-generated code provided a solid foundation, some corrections were needed, such as renaming undefined variables and ensuring consistency with the actual dataset structure.
