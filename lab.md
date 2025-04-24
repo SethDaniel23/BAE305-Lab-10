@@ -113,16 +113,13 @@ https://bae305-lab-10.streamlit.app/
 | Goal   | Give AI directions for accessing data for part 1 of the lab |
 |--------|-------------------------------------------------------------|
 | Model  | ChatGPT GPT-4-turbo                                         |
-| Prompt | generate a Python function that accesses the database, filters
-for the names of water quality measurement sites, and displays the location information for
-all sites without repetition |
+| Prompt | generate a Python function that accesses the database, filters for the names of water quality measurement sites, and displays the location information for all sites without repetition |
 
 
 | Goal   | Give AI directions for making the map for part 1 of the lab |
 |--------|-------------------------------------------------------------|
 | Model  | ChatGPT GPT-4-turbo                                         |
-| Prompt | create a map that pinpoints the location of every station in the
-database |
+| Prompt | create a map that pinpoints the location of every station in the database |
 
 
 **AI Assistance For Part 2**
@@ -130,24 +127,19 @@ database |
 | Goal   | Tell AI to access data file for part 2 |
 |--------|----------------------------------------|
 | Model  | ChatGPT GPT-4-Turbo                    |
-| Prompt | generate a Python function that accesses the narrowresults.csv database, filters 
-for a desired water quality characteristic, and plots the results. Each site should be
-represented as a separate line with a different color, where the Y-axis represents the
-measured values and the X-axis represents time. |
+| Prompt | generate a Python function that accesses the narrowresults.csv database, filters for a desired water quality characteristic, and plots the results. Each site should be represented as a separate line with a different color, where the Y-axis represents the measured values and the X-axis represents time. |
 
 | Goal   | Get ChatGPT to allow two characteristics at once |
 |--------|--------------------------------------------------------------------|
 | Model  | ChatGPT GPT-4-Turbo                                                |
-| Prompt | modify the code such that you can ask for two characteristics at the same
-time. |
+| Prompt | modify the code such that you can ask for two characteristics at the same time. |
 
 **AI Assistance for Part 3**
 
 | Goal   | Ask AI to combine the code from Part 1 and Part 2 |
 |--------|--------------------------------------------------------------------|
 | Model  | ChatGPT GPT-4-Turbo                                                |
-| Prompt | develop a Streamlit app that allows the user to upload both databases used in Part 1 and 2, to search for a contaminant in the databases. Once a contaminant has been selected you should be able to define the range of values and dates that you want to show. After modifying the ranges, update the map showing the location of the stations with the contaminant within that range and measured during the time frame. It should
-also show you a trend over time of the contaminant in all the stations shown. |
+| Prompt | develop a Streamlit app that allows the user to upload both databases used in Part 1 and 2, to search for a contaminant in the databases. Once a contaminant has been selected you should be able to define the range of values and dates that you want to show. After modifying the ranges, update the map showing the location of the stations with the contaminant within that range and measured during the time frame. It should also show you a trend over time of the contaminant in all the stations shown. |
 
 | Goal   | Debug code for streamlit application |
 |--------|--------------------------------------|
@@ -157,7 +149,7 @@ also show you a trend over time of the contaminant in all the stations shown. |
 | Goal   | Help AI understand station.csv file for streamlit application |
 |--------|---------------------------------------------------------------|
 | Model  | ChatGPT GPT-4-Turbo                                           |
-| Prompt | station headers: OrganizationIdentifier	OrganizationFormalName	MonitoringLocationIdentifier	MonitoringLocationName	MonitoringLocationTypeName	MonitoringLocationDescriptionText	HUCEightDigitCode	DrainageAreaMeasure/MeasureValue	DrainageAreaMeasure/MeasureUnitCode	ContributingDrainageAreaMeasure/MeasureValue	ContributingDrainageAreaMeasure/MeasureUnitCode	LatitudeMeasure	LongitudeMeasure	SourceMapScaleNumeric	HorizontalAccuracyMeasure/MeasureValue	HorizontalAccuracyMeasure/MeasureUnitCode	HorizontalCollectionMethodName	HorizontalCoordinateReferenceSystemDatumName	VerticalMeasure/MeasureValue	VerticalMeasure/MeasureUnitCode	VerticalAccuracyMeasure/MeasureValue	VerticalAccuracyMeasure/MeasureUnitCode	VerticalCollectionMethodName	VerticalCoordinateReferenceSystemDatumName	CountryCode	StateCode	CountyCode	AquiferName	LocalAqfrName	FormationTypeText	AquiferTypeName	ConstructionDateText	WellDepthMeasure/MeasureValue	WellDepthMeasure/MeasureUnitCode	WellHoleDepthMeasure/MeasureValue	WellHoleDepthMeasure/MeasureUnitCode	ProviderName |
+| Prompt | station headers: OrganizationIdentifier	OrganizationFormalName	MonitoringLocationIdentifier	MonitoringLocationName	MonitoringLocationTypeName	MonitoringLocationDescriptionText	HUCEightDigitCode DrainageAreaMeasure/MeasureValue	DrainageAreaMeasure/MeasureUnitCode	ContributingDrainageAreaMeasure/MeasureValue	ContributingDrainageAreaMeasure/MeasureUnitCode	LatitudeMeasure	LongitudeMeasure	SourceMapScaleNumeric	HorizontalAccuracyMeasure/MeasureValue	HorizontalAccuracyMeasure/MeasureUnitCode	HorizontalCollectionMethodName	HorizontalCoordinateReferenceSystemDatumName	VerticalMeasure/MeasureValue	VerticalMeasure/MeasureUnitCode	VerticalAccuracyMeasure/MeasureValue	VerticalAccuracyMeasure/MeasureUnitCode	VerticalCollectionMethodName	VerticalCoordinateReferenceSystemDatumName	CountryCode	StateCode	CountyCode	AquiferName	LocalAqfrName	FormationTypeText	AquiferTypeName	ConstructionDateText	WellDepthMeasure/MeasureValue	WellDepthMeasure/MeasureUnitCode	WellHoleDepthMeasure/MeasureValue	WellHoleDepthMeasure/MeasureUnitCode	ProviderName |
 
 ## Discussion:
 This lab demonstrated how AI-generated Python code can be applied to real-world environmental datasets for analysis and visualization. Using USGS water quality data, the lab explored the capabilities of tools like pandas and Streamlit to filter, map, and plot water quality trends by location and contaminant. While the AI-generated code provided a solid foundation, some corrections were needed, such as renaming undefined variables and ensuring consistency with the actual dataset structure.
